@@ -122,6 +122,7 @@ $SUDO_CMD \
     -smp 1 \
     -no-reboot \
     -netdev user,id=vmnic -device e1000,netdev=vmnic,romfile= \
+    -nic bridge,br=virbr0,model=virtio-net-pci \
     $IMAGE_DISK \
     -nographic \
     -monitor none \
